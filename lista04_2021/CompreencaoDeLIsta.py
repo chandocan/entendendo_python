@@ -59,3 +59,16 @@ print([bool(valor) for valor in [0,[], '', True, 1, 3.14]])
 #convertendo para string
 
 print([str(numero) for numero in [1,2,3,4,5]])
+
+# usando com estruturas de condições
+numeros = [1, 2, 3, 4, 5, 6, 7]
+
+print('esta imprimindo números pares é impares')
+
+# Qualquer número par módulo de 2 é 0 e o zero em python é false , not False = True
+pares = [numero for numero in numeros if not numero%2] 
+
+# Qualquer número impar módulo de 2 é 1 e 1 em python é True
+impares = [numero for numero in numeros if numero%2]
+print("numeros pares = ",pares)
+print("numeros impares = ",impares)
